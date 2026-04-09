@@ -1,14 +1,14 @@
 cask "souz-ai" do
-  version "1.0.5"
+  version "1.0.6"
 
   on_arm do
-    sha256 "e58e99246d3aeff368babe5dea1155e52f5ac87fe8b7b96eff21257bf8c08890"
-    url "https://github.com/D00mch/souz/releases/download/1.0.5/Souz_aarch64-1.0.5.dmg"
+    sha256 "63e4fa9bce0be0d1f5f79a29f75a9c7477eabb57bab76c9c030d0b5ddea494f8"
+    url "https://github.com/D00mch/souz/releases/download/1.0.6/Souz_aarch64-1.0.6.dmg"
   end
 
   on_intel do
-    sha256 "891627032a487adb4af9dc5e22a2e037555e49e0100da4551d4210edda3e5e3c"
-    url "https://github.com/D00mch/souz/releases/download/1.0.5/Souz_X86_64-1.0.5.dmg"
+    sha256 "6de75df5ecf457c433950072ebf58ef4701aac86a74153b8e4451c447d667fdf"
+    url "https://github.com/D00mch/souz/releases/download/1.0.6/Souz_X86_64-1.0.6.dmg"
   end
 
   name "Souz AI"
