@@ -1,25 +1,17 @@
 cask "souz-ai" do
-  version "1.0.6"
+  arch arm: "aarch64", intel: "X86_64"
 
-  on_arm do
-    sha256 "63e4fa9bce0be0d1f5f79a29f75a9c7477eabb57bab76c9c030d0b5ddea494f8"
-    url "https://github.com/D00mch/souz/releases/download/1.0.6/Souz_aarch64-1.0.6.dmg"
-  end
+  version "1.0.7"
+  sha256 arm:   "e3d298eb235c7d31aaf1216b66b5f353d7c29bf0a62601eebf56b8ee6cf5b5a0",
+         intel: "f3ca93ce9a572e2cd85ec97cddab50776bec2370fe1b19ef4c7b1226c0adfd23"
 
-  on_intel do
-    sha256 "6de75df5ecf457c433950072ebf58ef4701aac86a74153b8e4451c447d667fdf"
-    url "https://github.com/D00mch/souz/releases/download/1.0.6/Souz_X86_64-1.0.6.dmg"
-  end
-
+  url "https://github.com/D00mch/souz/releases/download/1.0.7/Souz_#{arch}-1.0.7.dmg",
+      verified: "github.com/D00mch/souz/"
   name "Souz AI"
   desc "Security-focused desktop AI assistant"
-  homepage "https://souz.app"
+  homepage "https://souz.app/"
 
-  livecheck do
-    url :url
-  end
-
-  depends_on macos: ">= :monterey"
+  depends_on macos: :monterey
 
   app "Souz AI.app"
 
