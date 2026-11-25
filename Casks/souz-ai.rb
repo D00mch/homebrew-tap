@@ -1,9 +1,9 @@
 cask "souz-ai" do
   arch arm: "aarch64", intel: "X86_64"
 
-  version "1.0.7"
-  sha256 arm:   "e3d298eb235c7d31aaf1216b66b5f353d7c29bf0a62601eebf56b8ee6cf5b5a0",
-         intel: "f3ca93ce9a572e2cd85ec97cddab50776bec2370fe1b19ef4c7b1226c0adfd23"
+  version "1.0.8"
+  sha256 arm:   "6256dcf4025478ea29a28d2bfbd901d2fd594b59e216e86b9346bf571ba347f0",
+         intel: "8403d78de3deca44c865a73a9e11e1ddfb21d981542b72ada816bfad3917e316"
 
   url "https://github.com/D00mch/souz/releases/download/#{version}/Souz_#{arch}-#{version}.dmg",
       verified: "github.com/D00mch/souz/"
